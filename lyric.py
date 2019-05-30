@@ -10,6 +10,9 @@ import re
 import jieba
 from collections import Counter
 
+reload(sys)
+sys.setdefaultencoding('utf8')
+
 all_words = [] # 保存各个词在不同歌曲出现的次数
 # 依次读取歌词文件
 for file_name in os.listdir('lyric'):
